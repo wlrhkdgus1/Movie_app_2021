@@ -1,0 +1,31 @@
+잉카인터넷
+
+react css 입히는방법 더블 {{}}
+<h3 class="movie__title" style={{backgroundColor: "red"}}>{title}</h3>
+
+npm i prop-types 사용하기.
+
+setState 사용법 익히기
+
+add = () => {
+    this.setState(current => ({ count: current.count + 1}));
+  }
+  minus = () => {
+    this.setState(current => ({ count: current.count - 1}));
+  }
+
+react 에서 current 사용법 익히기. 최신기술 add 클릭시  +1 minus 클릭시 -1
+
+////////////////////////
+component life cycle 공부
+setState를 호출하면 component를 호출하고 먼저 render를 호출한 다음
+업데이트가 완료되었다고 말하면 componentDidUpdate가 실행
+
+componentDidMount(){
+}
+componentDidUpdate(){
+}
+componentWillUnmount = 내가 뭘하다가 다른페이지를갈때 component가 죽을때.
+render
+
+npm install axios
