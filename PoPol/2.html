@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            video{
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+         <script language = "javascript">
+             var imgArray = new Array();
+             imgArray[0] = "videos/1.mp4";
+             imgArray[1] = "videos/2.mp4";
+             imgArray[2] = "videos/3.mp4";
+             imgArray[3] = "videos/4.mp4";
+             imgArray[4] = "videos/5.mp4";
+             imgArray[5] = "videos/6.mp4";
+             function showImage(){
+                 var imgNum = Math.round(Math.random()*6);
+                 var objImg = document.getElementById("introImg");
+                 objImg.src = imgArray[imgNum];
+             }
+         </script>
+    </head>
+<body onload="showImage()">
+    <video autoplay id="introImg"  muted="muted"></video>
+   
+      
+       
+</body>
+</html>
